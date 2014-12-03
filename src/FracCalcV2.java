@@ -11,3 +11,25 @@
 //     -- print frac1
 //   - divide frac1 by frac2
 //     -- print frac1
+
+public class FracCalcV2
+{
+  public static void main(String[] args)
+  {
+    RationalNumber frac= new RationalNumber(3,6);
+    RationalNumber frac2=new RationalNumber(2,8);
+    System.out.println("frac1: " +frac.toString());
+    System.out.println("frac2: " +frac2.toString());
+    frac.add(frac2);
+    System.out.println("frac1 + frac2: " +frac.toString());
+    frac.subtract(frac2);
+    System.out.println("frac1 - frac2: "+frac.toString());
+    frac.multiply(frac2);
+    System.out.println("frac1 * frac2: "+frac.toString());
+    frac.divide(frac2);
+    System.out.println("frac1 / frac2: "+frac.toString());
+  }
+}
+   
+    
+    
